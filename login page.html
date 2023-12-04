@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<title>simple login page</title>
+<style>
+
+    h1{
+        text-align: center;
+    }
+    
+.container {
+  width: 300px;
+  background-color: lightblue;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+    .username-login {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    .password-login {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+
+    }
+
+    .join-button {
+        display: inline-block;
+        padding: 12px 20px;
+        width: 100%;
+        border-radius: 2px;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(11, 165, 57);
+        height: 50px;
+        width: 100px;
+        border-color: rgb(11, 165, 57); 
+        transition: background-color 0.15s, 
+        color 0.15s;
+        cursor: pointer;
+    }
+
+    .join-button:hover {
+            background-color: rgb(248, 248, 248);
+            color: rgb(11, 165, 57);
+        }
+        
+        .join-button:active {
+            opacity: 0.5;
+        }
+    
+        .container {
+            align-items: center;
+        }
+
+</style>
+</head>
+
+<body>
+    <form action="/action_page.php" method="post">
+    <div class="container">
+    <p> 
+        <h1>LOGIN</h1> 
+    </p>
+
+    <label for="username-login"><b>Username</b></label>
+    <input class="username-login" "text" placeholder="Enter Username">
+
+    <label for="username-login"><b>Password</b></label>    
+    <input class="password-login" "text" placeholder="Enter Password">
+    
+    <button class="join-button">
+        JOIN
+    </button>
+    </div>
+</form>
+</body>
